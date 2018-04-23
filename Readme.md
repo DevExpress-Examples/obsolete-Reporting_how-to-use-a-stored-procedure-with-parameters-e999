@@ -1,0 +1,10 @@
+# How to use a stored procedure with parameters as a data source in a Web application
+
+
+<p><strong>This approach is actual prior to version 14.1. Starting with version 14.1, use the approach illustrated in the <a href="https://www.devexpress.com/Support/Center/p/T227403">How to bind a report to a stored procedure provided by the SQL Data Source in an ASP.NET Web Forms application</a> </strong><strong>example.</strong></p>
+<p><br />To allow passing a procedure parameter to an XtraReport descendant class (XtraReport1), it's updated with an argument which is used while populating the DataSet instance.<br /> On the web page, a DropDownList control is placed, which is populated with the list of parameters.<br /> In the example, the "CustOrdersOrders" stored procedure (Northwind database) with the "CustomerID" parameter is used, so the DropDownList contains every CustomerID from the Customers table.</p>
+<p>Within the Page_Load event handler, the ReportViewer.Report property is updated using a newly created report instance.</p>
+
+<br/>
+
+
